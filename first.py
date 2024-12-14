@@ -48,6 +48,10 @@ df_C_Plot = df['T (degC)'].rolling(window=1000, center=True).mean() # --> Glätt
 #print(df.isna().sum()) #bzw. print(df[df.isna().any(axis=1)])
 #-------------------------------------------------------------------------------------------------------
 
-
+# plotting
 df_C_Plot.plot()
 plt.show()
+
+
+# extract df
+#df.to_json(r"C:\Users\phili\OneDrive\Dokumente\Uni\Sem_3\Python\prv\ml\ml_beg\firstSrc.json", orient="records", lines=True)
